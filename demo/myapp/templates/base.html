@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Django Site</title>
+    <style>
+        /* Reset some default styles for the page */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the navigation bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        /* Style for the navigation links */
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        /* Style for the navigation links (anchors) */
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Style for hover effect on links */
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>Logo</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div>{% block content %}{% endblock %}
+</body>
+</html>
